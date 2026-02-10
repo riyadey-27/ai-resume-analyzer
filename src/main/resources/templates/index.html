@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>AI Resume Analyzer</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background: #0f172a;
-            color: #fff;
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
 
         .card {
             background: #111827;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 12px;
             width: 420px;
             text-align: center;
             box-shadow: 0 0 20px rgba(0,0,0,0.4);
         }
-        a {
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        a.button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 18px;
+            padding: 12px 18px;
             background: #22c55e;
             color: #000;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: bold;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #94a3b8;
         }
     </style>
 </head>
-<body>
-<div class="card">
-    <h1>AI Resume Analyzer</h1>
-    <p>
-        A Spring Boot–based backend application that analyzes resume text
-        against job descriptions and returns skill match percentage,
-        missing skills, and improvement suggestions.
-    </p>
 
-    <a href="/swagger-ui/index.html" target="_blank">
-        Open Swagger API
-    </a>
-</div>
+<body>
+    <div class="card">
+        <h1>AI Resume Analyzer</h1>
+
+        <p>
+            A Spring Boot REST API that analyzes resumes against job descriptions
+            and provides skill match, missing skills, and improvement suggestions.
+        </p>
+
+        <a class="button" href="/swagger-ui/index.html" target="_blank">
+            Open API Documentation (Swagger)
+        </a>
+
+        <footer>
+            Java • Spring Boot • REST APIs • Swagger • Docker • Render
+        </footer>
+    </div>
 </body>
 </html>
